@@ -1,6 +1,8 @@
 package errores1Blog;
+
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 
 /**
 *
@@ -8,36 +10,35 @@ import java.io.IOException;
 */
 public class Errores1Blog {
 /**
-* @param args the command line arguments
-
-String nombre;
-public static void main(String[] args) {
+ @param args the command line arguments
+*/
+public static void main(String[] args) throws IOException {
 // Declaración de variables
-Double x, y,z;
+int x, y,z;
 float a, b, c;
-
-BufredReader bufer = new BufferedReader(new ImputStreamReader());
+String nombre;
+BufferedReader bufer = new BufferedReader(new InputStreamReader(System.in));
 String entrada;
-System.out.println(&quot;Escribe el valor de x: &quot;);
+System.out.println("Escribe el valor de x: ");
 entrada = bufer.readLine();
 x= Integer.parseInt(entrada);
-System.out.println(&quot;Escribe el valor de y: &quot;);
+System.out.println("Escribe el valor de y: ");
 entrada = bufer.readLine();
-y = Double.parseDouble(entrada);
-z = y / x;
-System.out.println(&quot;El residuo de dividir y ( + y + &quot;) entre x ( &quot; +x + ) es: &quot; + z);
-System.out.println(&quot;Escribe el valor de a: &quot;);
-entrada = b.readLine();
-a = entrada;
-System.out.println(&quot;Escribe el valor de b: &quot;);
-in = bufer.readLine();
+y = Integer.parseInt(entrada);
+z = y % x;
+System.out.println("El residuo de dividir y ( " + y + " ) entre x ( " + x + " ) es: " + z);
+System.out.println("Escribe el valor de a: ");
+entrada = bufer.readLine();
+a = Float.parseFloat(entrada);
+System.out.println("Escribe el valor de b: ");
+entrada = bufer.readLine();
 b = Float.parseFloat(entrada);
 c = a * b ;
-System.out.println(&quot;El resultado de multiplicar a por b es: &quot; + c);
+System.out.println("El resultado de multiplicar a por b es: " + c);
 
 }
-System.out.println(&quot;Escribe una letra: &quot;);
+System.out.println("Escribe tu nombre: ");
 entrada = bufer.readLine();
-nombre = Entrada.ChartAt(12);
-System.out.println(&quot;El nombre que escribiste es: &quot; + Nombre);
+nombre = entrada;
+System.out.println("El nombre que escribiste es: " + nombre);
 }
