@@ -36,9 +36,9 @@ b = Float.parseFloat(entrada);
 c = a * b ;
 System.out.println("El resultado de multiplicar a por b es: " + c);
 
-}
 System.out.println("Escribe tu nombre: ");
 entrada = bufer.readLine();
 nombre = entrada;
 System.out.println("El nombre que escribiste es: " + nombre);
+}
 }
